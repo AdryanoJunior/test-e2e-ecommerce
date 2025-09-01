@@ -7,13 +7,8 @@ describe('Register functionality test cases - Demo Sylius', () => {
     });
 
     it('Register - Success', () => {
-        cy.get('#sylius_shop_customer_registration_firstName').type(faker.person.firstName('male'))
-        cy.get('#sylius_shop_customer_registration_lastName').type(faker.person.lastName('male'))
-        cy.get('#sylius_shop_customer_registration_email').type(faker.internet.email({ firstName: 'Scott' }))
-        cy.get('#sylius_shop_customer_registration_phoneNumber').type(faker.phone.number({ style: 'international' }))
-        cy.get('#sylius_shop_customer_registration_user_plainPassword_first').type('Testing12345$')
-        cy.get('#sylius_shop_customer_registration_user_plainPassword_second').type('Testing12345$')
-        cy.get('#register-button').click()
+        cy.register()
+       
         cy.get('body').should('contain', 'Thank you for registering, check your email to verify your account')
     });
 

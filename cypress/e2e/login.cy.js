@@ -1,10 +1,11 @@
 describe('Login functionality test cases - Demo Sylius', () => {
 
-  it('Login - Success', () => {
+  beforeEach(() => {
     cy.visit('login')
-    cy.get('#_username').type('fashion@example.com')
-    cy.get('#_password').type('sylius')
-    cy.get('#login-button').click()
+  });
+
+  it('Login - Success', () => {
+    cy.login('fashion@example.com', 'sylius')
     cy.get('body').should('contain', 'My account')
   })
 })
