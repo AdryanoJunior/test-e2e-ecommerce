@@ -44,11 +44,29 @@ import { faker } from '@faker-js/faker';
     cy.get("#sylius_shop_checkout_address_billingAddress_lastName").type(faker.person.lastName())
     cy.get("#sylius_shop_checkout_address_billingAddress_company").type(faker.company.name())
     cy.get("#sylius_shop_checkout_address_billingAddress_street").type(faker.location.streetAddress())
-    cy.get("#sylius_shop_checkout_address_billingAddress_countryCode").select('United States')
+    cy.get("#sylius_shop_checkout_address_billingAddress_countryCode").select('Canada')
     cy.get("#sylius_shop_checkout_address_billingAddress_city").type(faker.location.city())
     cy.get("#sylius_shop_checkout_address_billingAddress_postcode").type(faker.location.zipCode())
     cy.get("#sylius_shop_checkout_address_billingAddress_phoneNumber").type(faker.phone.number())
     cy.get(".btn-primary").click()
 
+ })
+
+  Cypress.Commands.add('selectShippingMethod', () => {
+   cy.get("#sylius_shop_checkout_select_shipping_shipments_0_method_1").click()
+   cy.get("[type='submit']").click()
+   
+ })
+
+ Cypress.Commands.add('selectPaymentMethod', () => {
+   cy.get("[value='bank_transfer']").click()
+   cy.get("[name='sylius_shop_checkout_select_payment'] .btn-primary").click()
+   
+ })
+
+
+  Cypress.Commands.add('placeOrderButton', () => {
+   cy.get("#confirmation-button.btn-primary").click()
+   
  })
 

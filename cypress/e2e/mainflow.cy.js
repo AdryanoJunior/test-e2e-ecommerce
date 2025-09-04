@@ -4,7 +4,7 @@ describe('System Main Flow - Demo Sylius', () => {
         cy.visit('register')
     });
     
-    it.only('From registration to finalizing the order', () => {
+    it('From registration to finalizing the order', () => {
         cy.register()
         cy.get('body').should('contain', 'Thank you for registering, check your email to verify your account')
 
@@ -19,5 +19,13 @@ describe('System Main Flow - Demo Sylius', () => {
 
         cy.fillBillingAddress()
         cy.get('body').should('contain', 'Order total:')
+
+        cy.selectShippingMethod()
+
+        cy.selectPaymentMethod()
+        cy.get('body').should('contain', 'Summary of your order')
+
+        cy.placeOrderButton()
+        cy.get('body').should('contain', 'You have successfully placed an order')
     });
 });
