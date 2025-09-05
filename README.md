@@ -58,18 +58,18 @@ Invalid login (wrong credentials)
 User registration
 
 Invalid registration validation
-```
 
-👤 User
+
+## User
 
 Update profile information
 
 Validate required fields
 
 Negative flows (e.g., invalid password)
-```
 
-🛒 Cart
+
+## Cart
 
 Add valid product
 
@@ -78,9 +78,9 @@ Add non-existent product
 Remove item from cart
 
 Update item quantity
-```
 
-💳 Checkout
+
+## Checkout
 
 Fill in valid address
 
@@ -89,9 +89,10 @@ Select shipping and payment method
 Complete order successfully
 
 Validate checkout errors
-```
 
-## Contributions
+
+
+### Contributions
 
 Contributions are welcome!
 Feel free to open an issue or submit a pull request with improvements, new scenarios, or refactors.
