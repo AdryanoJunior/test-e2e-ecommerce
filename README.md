@@ -45,7 +45,7 @@ npm install
 ```bash
 # You open the Cypress UI
 npx cypress open
-
+```
 
 # Test Scenarios
 
