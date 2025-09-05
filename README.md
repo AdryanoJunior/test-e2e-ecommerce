@@ -60,6 +60,7 @@ User registration
 Invalid registration validation
 
 
+
 ## User
 
 Update profile information
@@ -67,6 +68,7 @@ Update profile information
 Validate required fields
 
 Negative flows (e.g., invalid password)
+
 
 
 ## Cart
@@ -80,6 +82,7 @@ Remove item from cart
 Update item quantity
 
 
+
 ## Checkout
 
 Fill in valid address
@@ -89,6 +92,7 @@ Select shipping and payment method
 Complete order successfully
 
 Validate checkout errors
+
 
 
 
