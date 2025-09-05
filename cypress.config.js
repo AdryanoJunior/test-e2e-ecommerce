@@ -7,6 +7,6 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     baseUrl: "https://demo.sylius.com/en_US/",
-    //video: true,
+    video: true,
   },
 });

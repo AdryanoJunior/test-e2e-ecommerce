@@ -31,7 +31,7 @@ class ProductsPage {
     }
 
     removeProductButton() {
-        cy.get("[height='16']").click()
+        cy.get(".icon-tabler").click()
     }
 }
 

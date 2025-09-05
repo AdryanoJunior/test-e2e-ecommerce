@@ -28,16 +28,7 @@ describe('Main test cases - Products', () => {
         productsPage.visitProduct('Slim-fit-classic')
     });
 
-    it('Add product to cart successfully', () => {
-        productsPage.visitProductCatalog()
-
-        productsPage.searchProductList('Regular Fit casual')
-        productsPage.addProductToCart('M', 5)
-        cy.get('body').should('contain', 'Item has been added to cart')
-        cy.get('body').should('contain', 'You may also like')
-    });
-
-    it.only('Must remove product from cart successfully', () => {
+    it.only('Add product to cart and remove', () => {
          productsPage.visitProductCatalog()
          productsPage.searchProductList('Slim fit elegant')
          productsPage.addProductToCart('XXL', 3)
@@ -46,4 +37,5 @@ describe('Main test cases - Products', () => {
          productsPage.removeProductButton()
          cy.get('body').should('contain', 'Your cart is empty')
     });
+
 });
