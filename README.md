@@ -58,7 +58,7 @@ Invalid login (wrong credentials)
 User registration
 
 Invalid registration validation
-
+```
 
 👤 User
 
@@ -67,7 +67,7 @@ Update profile information
 Validate required fields
 
 Negative flows (e.g., invalid password)
-
+```
 
 🛒 Cart
 
@@ -78,7 +78,7 @@ Add non-existent product
 Remove item from cart
 
 Update item quantity
-
+```
 
 💳 Checkout
 
@@ -89,7 +89,7 @@ Select shipping and payment method
 Complete order successfully
 
 Validate checkout errors
-
+```
 
 ## Contributions
 
