@@ -59,6 +59,7 @@ User registration
 
 Invalid registration validation
 
+
 👤 User
 
 Update profile information
@@ -66,6 +67,7 @@ Update profile information
 Validate required fields
 
 Negative flows (e.g., invalid password)
+
 
 🛒 Cart
 
@@ -76,6 +78,7 @@ Add non-existent product
 Remove item from cart
 
 Update item quantity
+
 
 💳 Checkout
 
